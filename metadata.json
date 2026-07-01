@@ -1,0 +1,6 @@
+{
+  "name": "Generatore Fogli Scrittura Coreano",
+  "description": "Crea fogli di esercizi personalizzabili per esercitarsi nella scrittura dei vocaboli coreani (Hangul) con griglie, traduzioni, pronunce ed esempi pratici. Esporta in PDF per la stampa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
