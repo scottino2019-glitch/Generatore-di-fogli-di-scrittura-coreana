@@ -323,28 +323,65 @@ export default function App() {
 
     <style>
       @media print {
-        body {
+        @page {
+          size: auto;
+          margin: 10mm 15mm 15mm 15mm !important;
+        }
+        
+        html, body, .min-h-screen {
           background-color: white !important;
           color: black !important;
           -webkit-print-color-adjust: exact !important;
           print-color-adjust: exact !important;
+          display: block !important;
+          position: static !important;
+          width: 100% !important;
+          height: auto !important;
+          min-height: 0 !important;
+          max-height: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+          border: none !important;
+          box-shadow: none !important;
+          transform: none !important;
         }
+
+        main, section.lg\:col-span-7 {
+          display: block !important;
+          position: static !important;
+          width: 100% !important;
+          height: auto !important;
+          min-height: 0 !important;
+          max-height: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+          border: none !important;
+          box-shadow: none !important;
+          transform: none !important;
+        }
+
         .no-print {
           display: none !important;
         }
+
         .print-area {
-          position: absolute;
-          left: 0;
-          top: 0;
+          display: block !important;
+          position: relative !important;
           width: 100% !important;
+          max-width: 100% !important;
           margin: 0 !important;
           padding: 0 !important;
           box-shadow: none !important;
           border: none !important;
-          background: transparent !important;
+          background: white !important;
+          overflow: visible !important;
         }
+
         .print-item-avoid {
           page-break-inside: avoid !important;
+          break-inside: avoid-page !important;
           break-inside: avoid !important;
         }
       }
